@@ -1,0 +1,1 @@
+X prints a value of 3 in the first case. In the second case an error occurs where it states underfined local variable or method 'x' for main:object. What happened is that x was defined in the local scope and not in the global or outer scope.
