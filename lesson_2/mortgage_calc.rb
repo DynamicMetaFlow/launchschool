@@ -2,7 +2,7 @@ def prompt(message)
   Kernel.puts("=> #{message}")
 end
 
-bal = ''
+  bal = ''
 
 loop do
   prompt("What's the loan amount?")
@@ -41,14 +41,14 @@ loop do
   end
 end
 
-# Convert annual rate to monthly and make it decimal.
+  # Convert annual rate to monthly and make it decimal.
 
-annual_interest_rate = rate.to_f() / 100
-monthly_interest_rate = annual_interest_rate / 12
-months = term.to_i() * 12
+  annual_interest_rate = rate.to_f() / 100
+  monthly_interest_rate = annual_interest_rate / 12
+  months = term.to_i() * 12
 
-monthly_payment = bal.to_f() *
-                  (monthly_interest_rate /
-                  (1 - (1 + monthly_interest_rate)**-months.to_i()))
+  monthly_payment = bal.to_f() *
+                    (monthly_interest_rate /
+                    (1 - (1 + monthly_interest_rate)**-months.to_i()))
 
 prompt("Your monthly payment is: $#{format('%02.2f', monthly_payment)}")
