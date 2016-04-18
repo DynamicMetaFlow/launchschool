@@ -1,5 +1,4 @@
 
-Finally, don't forget to run your code through Rubocop.
 * prompt method to add special character
 #+BEGIN_SRC ruby :tangle yes
 def prompt(message)
